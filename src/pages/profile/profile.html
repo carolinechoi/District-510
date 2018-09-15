@@ -1,0 +1,40 @@
+<ion-content padding>
+
+  <ion-icon class="planet" name="bug"></ion-icon>
+
+  <h1>Just One More Step,</h1>
+  <p>We're excited to get to know you</p>
+
+  <div class="list">
+
+  <ion-item>
+    <ion-label color="secondary" stacked>First Name</ion-label>
+    <ion-input type="email" [(ngModel)]="profile.firstName"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="secondary" stacked>Last Name</ion-label>
+    <ion-input type="text" [(ngModel)]="profile.lastName"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label color="secondary" stacked>City</ion-label>
+      <ion-input type="text" [(ngModel)]="profile.city"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label color="secondary" stacked>Role</ion-label>
+      <ion-select interface = "popover" [(ngModel)]="profile.role">
+        <ion-option value="Student">Student</ion-option>
+        <ion-option value="Parent">Parent</ion-option>
+        <ion-option value="Solo">Solo</ion-option>
+      </ion-select>
+  </ion-item>
+
+</div>
+
+<div class="bttn">
+<button ion-button (click)="createProfile()">Finish</button>
+</div>
+
+</ion-content>

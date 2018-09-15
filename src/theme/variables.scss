@@ -34,11 +34,11 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
+  primary:    #00D3AD,
+  secondary:  #222c36,
   danger:     #f53d3d,
-  light:      #f4f4f4,
-  dark:       #222
+  light:      #BBBECA,
+  dark:       #222,
 );
 
 
@@ -46,23 +46,25 @@ $colors: (
 // --------------------------------------------------
 // iOS only Sass variables can go here
 
-
+$text-input-placeholder-color: #222c36;
+$text-input-highlight-color-valid: #BBBECA;
+$toast-ios-background:#facdac;
 
 
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
-
+$toast-md-background: #facdac;
 
 
 
 // App Windows Variables
 // --------------------------------------------------
 // Windows only Sass variables can go here
+$toast-wp-background: #facdac;
 
 
-
-
+ 
 // App Theme
 // --------------------------------------------------
 // Ionic apps can have different themes applied, which can

@@ -1,5 +1,8 @@
 {
   "name": "Coo1",
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular",
-  "integrations": {}
+  "pro_id": "863b5042"
 }

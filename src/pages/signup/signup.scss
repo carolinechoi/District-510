@@ -1,0 +1,90 @@
+@import 'https://fonts.googleapis.com/css?family=Rubik:regular,light';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+@import 'https://fonts.googleapis.com/css?family=Kirang+Haerang';
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+@import 'https://fonts.googleapis.com/css?family=Poppins:bold';
+
+$primary: #00D3AD;
+$secondary: #222c36;
+$light:      #BBBECA;
+
+page-signup {
+	margin-top: 40px;
+
+	.planet {
+		font-size: 65px;
+		color: $primary;
+		margin-left: 30px;
+		margin-bottom: -6px;
+	}
+
+	h1 {
+		margin-top: 10px;
+		font-size: 30px;
+		margin-left: 30px;
+		font-family: 'Poppins', bold;
+		color: $secondary;
+		letter-spacing: 1px;
+	}
+
+	p {
+		font-size: 14px;
+		font-family: 'Open Sans';
+		margin-left: 30px;
+		margin-top: -5px;
+		color: $light;
+		letter-spacing: 1px;
+	}
+
+	.list{
+		text-align: center;
+		width: 300px;
+		padding: 15px;
+		margin-top: 25px;
+
+		ion-label {
+			font-family: 'Poppins';
+			color: $secondary;
+			letter-spacing: 1px;
+			padding-top: 20px;
+		}
+	}
+
+.bttn {
+      margin-top: 60px;
+      text-align: center;
+      display: block;
+    
+    button {
+    	text-align: center;
+      font-size: 11px;
+      letter-spacing: 1px; 
+      border-radius: 0px;
+      font-family: "Open Sans";
+      height: 50px;
+      width: 270px;
+      padding-left: 30px;
+      padding-right: 30px;
+
+  background:linear-gradient(to right, $primary,#1cd780);    
+  background-repeat: no-repeat;
+    }
+ }
+
+ .sign {
+ 	margin-top: 30px;
+ 	display: flex;
+
+ 	button {
+ 		font-size: 14px;
+ 		font-family: "Open Sans";
+ 		margin-top: -0.6em;
+ 		margin-left: -5px;
+ 		letter-spacing: 1px;
+ 	}
+
+ 	p{
+ 		margin-top: 0.01em;
+ 	}
+ }
+}

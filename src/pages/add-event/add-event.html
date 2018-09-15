@@ -1,0 +1,49 @@
+<ion-content padding>
+
+  <ion-icon class="planet" name="globe"></ion-icon>
+
+  <h1>Create an Event</h1>
+  <p>Let's bring our community together</p>
+
+  <div class="list">
+
+  <ion-item>
+    <ion-label color="secondary" stacked>Event Title</ion-label>
+    <ion-input type="text" [(ngModel)]="event.eventTitle"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="secondary" stacked>Event Description</ion-label>
+    <ion-input type="text" [(ngModel)]="event.eventDescription"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label color="secondary" stacked placeholder="City, State">Location</ion-label>
+      <ion-input type="text" [(ngModel)]="event.location">{{eventImage$}}</ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label color="secondary" stacked>Category</ion-label>
+      <ion-select interface = "popover" [(ngModel)]="event.category">
+        <ion-option value="Environmental">Environmental</ion-option>
+        <ion-option value="Education">Education</ion-option>
+        <ion-option value="Other">Other</ion-option>
+      </ion-select>
+  </ion-item>
+
+  <button ion-button (click)="takePhoto()">Take Photo</button>
+  <ion-item>
+    <ion-input type="text" [(ngModel)]="event.eventImage"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <button ion-button (click)="pickImage()">Select Photo</button>
+  </ion-item>
+
+</div>
+
+<div class="bttn">
+<button ion-button (click)="addEvent(event)">Create Event</button>
+</div>
+
+</ion-content>

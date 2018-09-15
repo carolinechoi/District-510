@@ -1,3 +1,45 @@
-page-home {
+@import 'https://fonts.googleapis.com/css?family=Rubik:regular,light';
+@import 'https://fonts.googleapis.com/css?family=Kirang+Haerang';
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+@import 'https://fonts.googleapis.com/css?family=Poppins:bold';
 
+$primary: #00D3AD;
+$secondary: #222c36;
+$light:      #bbbeca;
+$dark-grey: #a6a7a9;
+
+page-home {
+	.header {
+		color: $secondary;
+		font-family: "Poppins";
+		margin-top: 40px;
+		margin-left: 20px;
+	}
+
+	.tagline {
+		font-size: 14px;
+		font-family: 'Open Sans';
+		margin-left: 20px;
+		margin-top: -5px;
+		color: $light;
+		letter-spacing: 1px;
+	}
+
+	.title {
+		font-family: "Open Sans";
+		margin-top: 40px;
+		letter-spacing: 1px;
+		margin-left: 20px;
+		color: $dark-grey;
+		font-size: 14px;
+	}
+
+	#map {
+		height: 70%;
+		margin-top: 50px;
+	}
+
+	.events {
+		margin-left: -10px;
+	}
 }

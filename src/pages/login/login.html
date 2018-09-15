@@ -1,0 +1,36 @@
+<ion-content no-bounce padding>
+  
+<!--  <ion-buttons start>
+      <button clear color="primary" ion-button navPop>
+    <ion-icon name="arrow-round-back"></ion-icon>
+      </button>
+    </ion-buttons> -->
+
+    <ion-icon class="planet" name="cloudy"></ion-icon>
+
+    <h1>Welcome back,</h1>
+    <p>Sign in to continue</p>
+
+    <div class="list">
+
+    <ion-item>
+      <ion-label color="secondary" stacked>Email Address</ion-label>
+      <ion-input type="email" [(ngModel)]="oldUser.email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="secondary" stacked>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="oldUser.password"></ion-input>
+    </ion-item>
+
+</div>
+
+<div class="bttn">
+<button ion-button (click)="login(oldUser)">Login</button>
+</div>
+
+<div class="sign">
+<p>Don't have an account?</p>
+<button ion-button color="primary" clear [navPush]="signup">Sign Up</button>
+</div>
+</ion-content>
