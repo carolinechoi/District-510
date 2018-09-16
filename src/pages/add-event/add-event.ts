@@ -71,8 +71,6 @@ export class AddEventPage {
   
   }
 
-  // pickImage() {
-  //   const 
-  // }
+
 }
 

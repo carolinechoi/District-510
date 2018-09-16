@@ -29,6 +29,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 import { HttpModule } from '@angular/http';
 import { AddEventPage } from '../pages/add-event/add-event';
+import { uploadPicture } from '../services/uploadPicture.service';
 
 @NgModule({
   declarations: [
@@ -69,6 +70,7 @@ import { AddEventPage } from '../pages/add-event/add-event';
     SplashScreen,
     ImagePicker,
     Camera,
+    uploadPicture,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
