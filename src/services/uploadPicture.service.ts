@@ -10,8 +10,10 @@ declare var window: any;
 
 @Injectable()
 export class uploadPicture {
-  private basePath: string = '/avatarPicture';
-  objectToSave: Array<any> = new Array;
+
+    //Note: We are uploading an image for an "avatarPicture", hence the string end.
+    private basePath: string = '/avatarPicture';
+    objectToSave: Array<any> = new Array;
 
   private takePictureOptions: CameraOptions = {
     allowEdit: false,
