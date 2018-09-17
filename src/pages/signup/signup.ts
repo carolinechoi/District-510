@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IonicPage, ToastController, NavController, NavParams } from 'ionic-angular';
 
 import { LoginPage } from '../login/login';
@@ -7,7 +7,7 @@ import { TabsPage } from '../tabs/tabs';
 
 import { Users } from '../../models/users.interface';
 
-import { AngularFireDatabase } from 'angularfire2/database';
+import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
 import { AngularFireAuth } from 'angularfire2/auth';
 
 import { Observable } from 'rxjs';
@@ -18,15 +18,17 @@ import { ProfilePage } from '../profile/profile';
   selector: 'page-signup',
   templateUrl: 'signup.html',
 })
-export class SignupPage {
+export class SignupPage implements OnInit{
 
 	newUser = {} as Users;
-	newUserRef$: Observable<Users[]>;
+	newUserRef$: AngularFireList<Users[]>;
 
   constructor(private afAuth: AngularFireAuth, private database: AngularFireDatabase, public navCtrl: NavController, public navParams: NavParams, public toast: ToastController) {
-  	this.newUserRef$ = this.database.object('users');
   }
 
+  ngOnInit() {
+    this.newUserRef$ = this.database.list('users');
+  }
   async addUser(newUser: Users) {
     try {
     const result = await this.afAuth.auth.createUserWithEmailAndPassword(newUser.email, newUser.password);
